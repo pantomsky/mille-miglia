@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  origin_address: MyString
+  dest_address: MyString
+  distance: 1.5
+
+two:
+  origin_address: MyString
+  dest_address: MyString
+  distance: 1.5

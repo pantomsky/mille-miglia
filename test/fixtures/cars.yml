@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: MyString
+  mark: MyString
+  model: MyString
+  engine: 1.5
+
+two:
+  number: MyString
+  mark: MyString
+  model: MyString
+  engine: 1.5

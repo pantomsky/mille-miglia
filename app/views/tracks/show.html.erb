@@ -1,0 +1,30 @@
+<p>
+  <strong>Origin address:</strong>
+  <%= @track.origin_address %>
+</p>
+
+<p>
+  <strong>Dest address:</strong>
+  <%= @track.dest_address %>
+</p>
+
+<p>
+  <strong>Distance:</strong>
+  <%= @track.distance %>
+</p>
+
+<p>
+  <strong>Driver:</strong>
+  
+   <p><label for = "track_driver_id">Driver</label>:
+
+
+  </p>
+</p>
+
+
+
+
+
+<%= link_to 'Edit', edit_track_path(@track) %> |
+<%= link_to 'Back', tracks_path %>

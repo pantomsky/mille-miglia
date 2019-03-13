@@ -1,0 +1,39 @@
+
+<%= form_for(@track) do |f| %>
+  <% if @track.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@track.errors.count, "error") %> prohibited this track from being saved:</h2>
+
+      <ul>
+      <% @track.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :origin_address %><br>
+    <%= f.text_field :origin_address %>
+  </div>
+  <div class="field">
+    <%= f.label :dest_address %><br>
+    <%= f.text_field :dest_address %>
+  </div>
+
+  
+<%= render 'map' %>
+  
+  <div class="field">
+    <%= f.label :distance %><br>
+    <%= f.text_field :distance %>
+  </div>
+  
+  
+    <p><label for = "track_driver_id">Driver</label>:
+ 
+  <%= f.select :driver_id, Driver.all.map {|d| ["#{d.name} #{d.surname}",d.id]} %>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
